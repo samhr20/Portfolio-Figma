@@ -3,20 +3,19 @@
     padding: 0;
 }
 
-
-body{
-    background-color: black;
-}
-
-
 header {
-    position: sticky;
-    top: 10px;
+    position: fixed;
+    width: 100%;
+    padding-top: 7px;
+    ;
+    top: 0.1px;
     z-index: 10;
+    background-color: black;
 }
 
 .header-div nav h3 {
     color: #FF8C00;
+    font-size: 30px;
 }
 
 nav {
@@ -25,10 +24,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header-div nav h3 {
-    font-size: 30px;
 }
 
 .Works-blog-contact {
@@ -42,21 +37,21 @@ nav {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
     color: white;
     cursor: pointer;
 }
 
-.hero{
-    height: 80px;
+.hero {
+    height: 110px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 100px;
-    margin: 110px;
+    padding: 195px;
+    background-color: black;
 }
 
-.hero .left-box , .right-box {
+.hero .left-box,
+.right-box {
     height: 328px;
     width: 492px;
     display: inline-block;
@@ -74,7 +69,6 @@ nav {
 
 .left-box .left-box-secondchild {
     margin-top: 12px;
-    
 }
 
 .left-box .left-box-secondchild p {
@@ -87,11 +81,11 @@ nav {
 }
 
 
-.left-box :nth-child(3) {
+.left-box-thirdchild {
     margin-top: 35px;
 }
 
-.left-box :nth-child(3) button {
+.left-box-thirdchild button {
     padding: 20px;
     font-family: Heebo;
     font-size: 20px;
@@ -114,18 +108,159 @@ nav {
 }
 
 
-.main-bg{
+.main-bg {
     background-color: #CCCCCC;
-    height: 2400px;
+    height: 340px;
 }
 
-.mainbg-recentpost{
+.mainbg-recentpost {
     display: flex;
-    justify-content: space-around ;
-    width: 80vw;
-    margin: 0 auto;
+    justify-content: space-around;
+    width: 90vw;
 }
 
-.mainbg-recentpost span{
-    margin-top: 5px;
+.mainbg-recentpost :first-child {
+    color: #21243D;
+    font-family: Heebo;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.mainbg-recentpost :last-child {
+    color: #04414e;
+    text-align: right;
+    font-family: Heebo;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.posts {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 115px;
+    margin-top: -10px;
+}
+
+.posts-left,
+.posts-right {
+    width: 428px;
+    height: 185px;
+    background-color: black;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+}
+
+.posts-heading {
+    color: #79efef;
+    font-family: Heebo;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.posts-date {
+    margin-top: 17px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-paragraph {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Featured-works {
+    height: 800px;
+    background-color: black;
+}
+
+.Featured-works-heading {
+    width: 65vw;
+    margin: auto;
+    color: white;
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.Featured-works-middle-box {
+    width: 51vw;
+    margin:  20px auto;
+    justify-content: space-around;
+    display: grid;
+    position: relative;
+}
+
+.fw-box {
+    height: 204px;
+    width: 934px;
+    display: flex;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.fw-image-box {
+    display: inline-block;
+    width: 315px;
+}
+
+.fw-text-box{
+    width: 550px;
+}
+
+.fw-heading {
+    color:#00FFFF;
+    font-family: Heebo;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.fw-year {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.fw-year :first-child {
+    display: inline-block;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.fw-year :last-child {
+    color: #8695A4;
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fw-paragraph {
+    color: white;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+footer{
+    height: 182px;
+    
 }
