@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+header {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+}
+
+.header-div nav h3 {
+    color: #FF8C00;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-div nav h3 {
+    font-size: 30px;
+}
+
+.Works-blog-contact {
+    width: 195px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Works-blog-contact span {
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: white;
+    cursor: pointer;
+}
+
+.hero{
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+    margin: 110px;
+}
+
+.hero .left-box , .right-box {
+    height: 328px;
+    width: 492px;
+    display: inline-block;
+}
+
+.left-box .left-box-firstchild div {
+    color: #00FFFF;
+    font-family: Heebo;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+
+.left-box .left-box-secondchild {
+    margin-top: 12px;
+    
+}
+
+.left-box .left-box-secondchild p {
+    color: #CCCCCC;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.left-box :nth-child(3) {
+    margin-top: 35px;
+}
+
+.left-box :nth-child(3) button {
+    padding: 20px;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    background-color: #FF00FF;
+    border-radius: 7px;
+}
+
+.left-box {
+    margin-top: 50px;
+}
+
+.right-box img {
+    margin-left: 90px;
+}
+
+.right-box img:hover {
+    filter: drop-shadow(5px 3px 8px #d761d7);
+}
+
+
+.main-bg{
+    background-color: #CCCCCC;
+    height: 2400px;
+}
+
+.mainbg-recentpost{
+    display: flex;
+    justify-content: space-around ;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.mainbg-recentpost span{
+    margin-top: 5px;
+}
