@@ -35,10 +35,14 @@ nav {
 .Works-blog-contact span {
     font-family: Heebo;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
     color: white;
     cursor: pointer;
+}
+
+.Works-blog-contact span:hover{
+    font-size: 23px;
+    font-weight: 700;
 }
 
 .hero {
@@ -89,10 +93,14 @@ nav {
     padding: 20px;
     font-family: Heebo;
     font-size: 20px;
-    font-style: normal;
     font-weight: 900;
     background-color: #FF00FF;
     border-radius: 7px;
+}
+
+.left-box-thirdchild button:hover{
+    font-weight:900;
+    background-color: #c638c6;
 }
 
 .left-box {
@@ -159,6 +167,11 @@ nav {
     color: white;
 }
 
+.posts-left:hover,
+.posts-right:hover{
+    filter: drop-shadow(5px 5px 8px #130e13);
+}
+
 .posts-heading {
     color: #79efef;
     font-family: Heebo;
@@ -218,6 +231,10 @@ nav {
     width: 315px;
 }
 
+.fw-image img:hover{
+    height: 210px;
+}
+
 .fw-text-box{
     width: 550px;
 }
@@ -226,6 +243,12 @@ nav {
     color:#00FFFF;
     font-family: Heebo;
     font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fw-heading:hover{
+    font-size: 28.5px;
     font-weight: 700;
 }
 
@@ -262,5 +285,26 @@ nav {
 
 footer{
     height: 182px;
-    
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content:center ;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 80px;
+    width: 223px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+
+.logo img:hover {
+    height: 32px;
 }
