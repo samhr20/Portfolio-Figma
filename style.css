@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Poppins:ital,wght@1,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +9,39 @@ header {
     position: fixed;
     width: 100%;
     padding-top: 7px;
-    ;
-    top: 0.1px;
     z-index: 10;
     background-color: black;
+
+    @media(max-width:480px) {
+        padding-top: 10px;
+    }
+}
+
+.hamburger {
+    display: none;
+
+    @media(max-width:480px) {
+        display: contents;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+.hamburger :hover {
+    @media(max-width:480px) {
+        font-size: 21px;
+    }
+
 }
 
 .header-div nav h3 {
     color: #FF8C00;
     font-size: 30px;
+
+    @media(max-width:480px) {
+        font-size: 25px;
+    }
 }
 
 nav {
@@ -24,50 +50,100 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width:480px) {
+        max-width: 90vw;
+    }
+
 }
 
 .Works-blog-contact {
     width: 195px;
     display: flex;
     justify-content: space-between;
+
+    @media(max-width:480px) {
+        display: none;
+    }
 }
 
-.Works-blog-contact span {
+.Works-blog-contact a {
     font-family: Heebo;
     font-size: 20px;
     font-weight: 500;
     color: white;
     cursor: pointer;
+    text-decoration: none;
+
+    @media(max-width:480px) {
+        font-size: 17px;
+        font-weight: 300;
+    }
 }
 
-.Works-blog-contact span:hover{
+.Works-blog-contact a:hover {
     font-size: 23px;
     font-weight: 700;
+
+    @media(max-width:480px) {
+        font-size: 19px;
+        font-weight: 400;
+    }
 }
 
 .hero {
-    height: 110px;
+    height: 550px;
     display: flex;
+    width: 100%;
+    overflow: hidden;
     justify-content: space-evenly;
     align-items: center;
-    padding: 195px;
     background-color: black;
+
+    @media(max-width:480px) {
+        flex-direction: column-reverse;
+        position: relative;
+        justify-content: center;
+        height: 580px;
+    }
 }
 
 .hero .left-box,
-.right-box {
+.right {
     height: 328px;
     width: 492px;
     display: inline-block;
+
+    @media(max-width:480px) {
+        height: 200px;
+        width: 350px;
+    }
 }
 
-.left-box .left-box-firstchild div {
+.hero.right-box {
+    height: 328px;
+    width: 492px;
+    display: inline-block;
+
+    @media(max-width:480px) {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+
+.left-box .left-box-firstchild {
     color: #00FFFF;
-    font-family: Heebo;
-    font-size: 44px;
-    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
     font-weight: 700;
     line-height: 60px;
+
+    @media(max-width:480px) {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 37px;
+    }
 }
 
 
@@ -82,11 +158,22 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media(max-width:480px) {
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 18px;
+    }
 }
 
 
 .left-box-thirdchild {
     margin-top: 35px;
+
+    @media(max-width:480px) {
+        margin-top: 15px;
+    }
+
 }
 
 .left-box-thirdchild button {
@@ -96,10 +183,17 @@ nav {
     font-weight: 900;
     background-color: #FF00FF;
     border-radius: 7px;
+
+    @media(max-width:480px) {
+        padding: 7px;
+        font-family: Heebo;
+        font-size: 15px;
+        font-weight: 600;
+    }
 }
 
-.left-box-thirdchild button:hover{
-    font-weight:900;
+.left-box-thirdchild button:hover {
+    font-weight: 900;
     background-color: #c638c6;
 }
 
@@ -109,6 +203,13 @@ nav {
 
 .right-box img {
     margin-left: 90px;
+    height: 350px;
+
+    @media(max-width:480px) {
+        height: 200px;
+        margin-left: 5px;
+    }
+
 }
 
 .right-box img:hover {
@@ -119,12 +220,19 @@ nav {
 .main-bg {
     background-color: #CCCCCC;
     height: 340px;
+    overflow: hidden;
+
+    @media(max-width:480px) {
+        height: 480px;
+    }
+
 }
 
 .mainbg-recentpost {
     display: flex;
     justify-content: space-around;
     width: 90vw;
+    overflow: hidden;
 }
 
 .mainbg-recentpost :first-child {
@@ -151,8 +259,13 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 115px;
-    margin-top: -10px;
+    /* padding: 115px; */
+    margin-top: 100px;
+
+    @media(max-width:480px) {
+        flex-direction: column;
+        margin-top: 170px;
+    }
 }
 
 .posts-left,
@@ -165,10 +278,16 @@ nav {
     padding: 15px;
     border-radius: 4px;
     color: white;
+
+    @media(max-width:480px) {
+        width: 350px;
+        height: 145px;
+        margin-top: 20px;
+    }
 }
 
 .posts-left:hover,
-.posts-right:hover{
+.posts-right:hover {
     filter: drop-shadow(5px 5px 8px #130e13);
 }
 
@@ -177,6 +296,11 @@ nav {
     font-family: Heebo;
     font-size: 28px;
     font-weight: 700;
+
+    @media(max-width:480px) {
+        font-size: 22px;
+        font-weight: 700;
+    }
 }
 
 .posts-date {
@@ -197,6 +321,11 @@ nav {
 .Featured-works {
     height: 800px;
     background-color: black;
+    overflow: hidden;
+
+    @media (max-width :480px) {
+        height: 700px;
+    }
 }
 
 .Featured-works-heading {
@@ -207,49 +336,117 @@ nav {
     font-size: 22px;
     font-weight: 400;
     line-height: 60px;
+
+    @media (max-width :480px) {
+        font-size: 19px;
+        font-weight: 200;
+        line-height: 50px;
+    }
 }
 
 .Featured-works-middle-box {
     width: 51vw;
-    margin:  20px auto;
+    margin: 20px auto;
     justify-content: space-around;
     display: grid;
     position: relative;
+    overflow: hidden;
+
+    @media (max-width :480px) {
+        width: 91vw;
+        margin-left: 15px;
+    }
 }
 
 .fw-box {
     height: 204px;
     width: 934px;
     display: flex;
-    padding: 3px;
-    border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
+    overflow: hidden;
+
+    @media (max-width :480px) {
+        height: 150px;
+        width: 400px;
+        /* background-color: #79efef; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.fw-box-3 {
+    height: 204px;
+    width: 934px;
+    display: flex;
+    margin-top: 40px;
+    overflow: hidden;
+
+    @media (max-width :480px) {
+        height: 180px;
+        width: 400px;
+        /* background-color: #79efef; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .fw-image-box {
-    display: inline-block;
     width: 315px;
+
+    @media (max-width :480px) {
+        width: 142px;
+        /* background-color: #c638c6;  */
+    }
 }
 
-.fw-image img:hover{
+
+.fw-image-box img {
+    height: 205px;
+
+    @media (max-width :480px) {
+        height: 100px;
+    }
+}
+
+.fw-image img:hover {
     height: 210px;
+
+    @media (max-width :480px) {
+        height: 105px;
+    }
 }
 
-.fw-text-box{
+.fw-text-box {
     width: 550px;
+
+    @media (max-width :480px) {
+        width: 220px;
+    }
 }
 
 .fw-heading {
-    color:#00FFFF;
+    color: #00FFFF;
     font-family: Heebo;
     font-size: 28px;
     font-weight: 700;
     cursor: pointer;
+
+    @media (max-width :480px) {
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
-.fw-heading:hover{
+.fw-heading:hover {
     font-size: 28.5px;
     font-weight: 700;
+
+    @media (max-width :480px) {
+        font-size: 17px;
+        font-weight: 600;
+    }
 }
 
 .fw-year {
@@ -258,6 +455,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
+
+    @media (max-width :480px) {
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
 }
 
 .fw-year :first-child {
@@ -265,6 +468,11 @@ nav {
     background-color: grey;
     padding: 5px;
     border-radius: 8px;
+
+    @media (max-width :480px) {
+        padding: 2px;
+        border-radius: 4px;
+    }
 }
 
 .fw-year :last-child {
@@ -272,7 +480,11 @@ nav {
     font-family: Heebo;
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
+
+    @media (max-width :480px) {
+        font-size: 15px;
+        font-weight: 200;
+    }
 }
 
 .fw-paragraph {
@@ -281,21 +493,27 @@ nav {
     font-size: 16px;
     font-weight: 400;
     margin-top: 25px;
+
+    @media (max-width :480px) {
+        font-size: 13px;
+        font-weight: 200;
+        margin-top: 10px;
+    }
 }
 
-footer{
+footer {
     height: 182px;
     background-color: black;
     color: white;
     display: grid;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
 }
 
-.logo{
+.logo {
     margin-top: 80px;
     width: 223px;
-    display: flex ;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -307,4 +525,68 @@ footer{
 
 .logo img:hover {
     height: 32px;
+}
+
+
+
+/* Blog page */
+
+
+.blog-main-bg {
+    background-color: black;
+    height: 1040px;
+    overflow: hidden;
+
+}
+
+.blog-heading {
+    width: 65vw;
+    margin: 5px auto;
+    color: white;
+    font-family: Heebo;
+    font-size: 34px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.blog-articles {
+    height: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.blog-articles-box {
+    height: 150px;
+    width: 650px;
+    @media(max-width:480px) {
+        height: 150px;
+        width: 400px;
+    }
+}
+
+
+.blog-articles-heading {
+    color: white;
+    font-family: Heebo;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.blog-articles-year {
+    color: white;
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.blog-articles-para{
+    color: white;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
 }
